@@ -1,0 +1,164 @@
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:auto;
+    width:auto;
+    justify-content: center;
+}
+
+.letter, .extra {
+    display: flex;
+    height: 200px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100px;
+}
+
+#A {
+    background-color:blue;
+}
+#B {
+    background-color:greenyellow;
+}
+#C {
+    background-color:purple;
+}
+#D {
+    background-color:gold;
+}
+#E {
+    background-color:red;
+}
+#F {
+    background-color:deepskyblue;
+}
+#G {
+    background-color:aquamarine;
+}
+#H {
+    background-color:mediumpurple;
+}
+#I {
+    background-color:hotpink;
+}
+#J {
+    background-color:olivedrab;
+}
+#K {
+    background-color:blue;
+}
+#L {
+    background-color:indianred
+}
+#M {
+    background-color:antiquewhite;
+}
+#N {
+    background-color:darkseagreen
+}
+#O {
+    background-color:lightcoral;
+}
+#P {
+    background-color:cornflowerblue;
+}
+#Q {
+    background-color:beige;
+}
+#R {
+    background-color:greenyellow;
+}
+#S {
+    background-color:salmon;
+} 
+#T {
+    background-color:wheat;
+} 
+#U {
+    background-color:goldenrod;
+}
+#V {
+    background-color:yellowgreen;
+}
+#W {
+    background-color:peachpuff
+}
+#X {
+    background-color:orange;
+}
+#Y {
+    background-color:olivedrab;
+}
+#Z {
+    background-color:royalblue;
+}
+#Å{
+    background-color:aqua;
+}
+#Ä {
+    background-color:bisque;
+}
+#Ö {
+    background-color:blueviolet;
+}
+
+#empty1 {
+    background-color:deepskyblue;
+}
+#empty2 {
+    display: none;
+    background-color:aquamarine;
+}
+#empty3 {
+    display: none;
+    background-color:mediumpurple;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .letter, .extra {
+        width: 33.333333%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .letter, .extra {
+        width: 25%;
+    }
+    .grid {
+        justify-content: left;
+    }
+    #empty2 {
+        display: block;
+        background-color:aquamarine;
+    }
+    #empty3 {
+        display: block;
+        background-color:mediumpurple;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .letter, .extra {
+        width: 20%;
+    }
+    #empty2, #empty3 {
+        display: none;
+    }
+}
+/*Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+    .letter, .extra {
+        width: 16.666667%;
+    }
+}
+
